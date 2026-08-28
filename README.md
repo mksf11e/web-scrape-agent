@@ -2,12 +2,78 @@
 
 [English](README.md) | [繁體中文](README.zh-Hant.md)
 
-A lightweight, agent-agnostic workflow for capturing website text and layout:
+## Turn a public website into an organized, searchable research pack
 
-1. discover pages from rendered links and optional sitemaps;
-2. save readable page text as Markdown;
-3. scroll through lazy-loaded content;
-4. capture a full-page PNG for each page.
+If your job involves competitor research, client website reviews, content analysis, or website redesigns, you may have spent hours opening pages one by one, copying text, recording URLs, and taking screenshots.
+
+This becomes slow and error-prone when a website has many pages. Pages are easily missed, URLs get separated from their content, and screenshots may not include material loaded further down the page.
+
+Web Scrape Agent helps you handle this work in batches:
+
+1. discover relevant pages within a website;
+2. organize each page’s text into readable Markdown;
+3. keep the original URL at the beginning of each document;
+4. scroll through the complete page to load images and lower-page content;
+5. create one full-page screenshot for every captured page;
+6. organize the results into a separate folder for each page.
+
+The result is a structured website research pack:
+
+```text
+site-output/
+├── _pages_index.txt
+├── about/
+│   ├── content.md
+│   └── screenshot.png
+├── services/
+│   ├── content.md
+│   └── screenshot.png
+└── pricing/
+    ├── content.md
+    └── screenshot.png
+```
+
+## How does this help with everyday work?
+
+### Competitor research
+
+Collect service pages, pricing, case studies, FAQs, and articles without manually copying and screenshotting every page.
+
+### Market and content research
+
+Give the collected text to an AI tool or your team for searching, comparison, content planning, advertising research, sales messaging, or market analysis.
+
+### Client website preparation
+
+Save a client’s current website text and layout before starting a redesign, SEO, branding, or copywriting project.
+
+### Website review and change records
+
+Keep complete page screenshots for comparing versions, identifying missing pages, and explaining issues to teammates or clients.
+
+### Team handover
+
+Turn information scattered across a website into folders containing the source URL, readable text, and a visual reference.
+
+## The practical efficiency gain
+
+Web Scrape Agent turns this repeated process:
+
+```text
+open every page
+→ copy the text
+→ record the URL
+→ organize the document
+→ scroll through the page
+→ take a screenshot
+→ name and file everything
+```
+
+into one batch workflow.
+
+It is designed for people who need to work with website information but do not want to build a crawler or repeat the same manual steps for every page.
+
+Use this tool only for public pages or websites that you are explicitly authorized to capture.
 
 The repository includes a Claude `SKILL.md` wrapper, but the Node.js scripts can be used by any coding agent or directly from a terminal.
 
