@@ -1,0 +1,27 @@
+node_modules/
+
+# Generated capture output
+site-output/
+capture-output/
+*_output/
+*_capture/
+_pages.json
+_pages_index.txt
+_screenshot_report.json
+screenshot.png
+
+# Local configuration and logs
+.env
+.env.*
+*.log
+npm-debug.log*
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp

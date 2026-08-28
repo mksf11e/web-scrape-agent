@@ -1,0 +1,28 @@
+{
+  "name": "web-scrape-agent",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Agent-agnostic website text extraction and full-page screenshot capture",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mksf11e/web-scrape-agent.git"
+  },
+  "homepage": "https://github.com/mksf11e/web-scrape-agent#readme",
+  "bugs": {
+    "url": "https://github.com/mksf11e/web-scrape-agent/issues"
+  },
+  "scripts": {
+    "scrape": "node scripts/scrape.mjs",
+    "screenshot": "node scripts/screenshot.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "playwright": "1.62.1",
+    "turndown": "7.2.4",
+    "turndown-plugin-gfm": "1.0.2"
+  }
+}
